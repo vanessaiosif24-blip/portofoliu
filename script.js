@@ -1,9 +1,3 @@
-// Mic efect scroll smooth
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener("click", function(e) {
-    e.preventDefault();
-    document.querySelector(this.getAttribute("href")).scrollIntoView({
-      behavior: "smooth"
-    });
-  });
+document.addEventListener("DOMContentLoaded", () => {
+  console.log("Site-ul vanessaiosifphotography a fost încărcat!");
 });
