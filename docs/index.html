@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofoliul Meu</title>
+  <style>
+    /* === style.css === */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #222;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+      background: linear-gradient(135deg, #4facfe, #00f2fe);
+      color: white;
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .project-card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    button {
+      background: #4facfe;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #00c6fb;
+    }
+  </style>
+</head>
+<body>
+  <!-- === index.html content === -->
+  <header>
+    <h1>Portofoliul Meu</h1>
+    <nav>
+      <a href="#despre">Despre</a>
+      <a href="#proiecte">Proiecte</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Bun venit!</h2>
+    <p>Sunt Vanessa și acesta este portofoliul meu online 🚀</p>
+  </section>
+
+  <section id="despre">
+    <h2>Despre mine</h2>
+    <p>Îmi place programarea și design-ul web. Aici găsești câteva dintre proiectele mele.</p>
+  </section>
+
+  <section id="proiecte">
+    <h2>Proiectele mele</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>Proiect 1</h3>
+        <p>Descriere scurtă a proiectului.</p>
+      </div>
+      <div class="project-card">
+        <h3>Proiect 2</h3>
+        <p>Descriere scurtă a proiectului.</p>
+      </div>
+      <div class="project-card">
+        <h3>Proiect 3</h3>
+        <p>Descriere scurtă a proiectului.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Îmi poți scrie pe email: <a href="mailto:vanessa@example.com">vanessa@example.com</a></p>
+    <button onclick="salut()">Apasă aici 👋</button>
+  </section>
+
+  <footer>
+    <p>© 2025 Portofoliul Meu. Toate drepturile rezervate.</p>
+  </footer>
+
+  <script>
+    // === script.js ===
+    function salut() {
+      alert("Salut! Mulțumesc că vizitezi portofoliul meu 😊");
+    }
+  </script>
+</body>
+</html>
